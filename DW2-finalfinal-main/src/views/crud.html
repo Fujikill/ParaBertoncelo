@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/bscss/bootstrap.min.css">
+    <link href="/publico/css/form-album.css" rel="stylesheet">
+    <script>
+        function excluir() {
+            alert('Pronto excluído');
+        }
+    </script>
+
+
+    <title>Banco de dados</title>
+
+</head>
+
+<body>
+    <main>
+        <button type="button" class="btn btn-outline-info btn-md">+ Adicionar Avaliação</button>
+
+        <table class="table table-bordered border-dark caption-top">
+            <thead>
+                <tr class="table-dark  ">
+                    <th scope="col">Data</th>
+                    <th scope="col">Etapa</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Forma de cálculo</th>
+                    <th scope="col">Valor Mínimo</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Excluir</th>
+                </tr>
+            </thead>
+            <tbody class="table-light  ">
+                <tr>
+                    <th scope="row">16/02/2022</th>
+                    <td>1ºetapa</td>
+                    <td>Prova 1B</td>
+                    <td>Prova</td>
+                    <td>-</td>
+                    <td>Soma direta</td>
+                    <td>6</td>
+                    <td>
+                        <button type="button" class="btn  btn-outline-dark"><img src="../publico/imagens/icons8-pen-64.png" width="20px"></img></button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn  btn-outline-dark" onclick="excluir()"><img src="../publico/imagens/icons8-trash-64.png" width="20px"></img></button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row">17/02/2022</th>
+                    <td>1ºetapa</td>
+                    <td>Prova 1B</td>
+                    <td>Prova</td>
+                    <td>-</td>
+                    <td>Soma direta</td>
+                    <td>6</td>
+                    <td>
+                        <button type="button" class="btn  btn-outline-dark"><img src="../publico/imagens/icons8-pen-64.png" width="20px"></img></button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn  btn-outline-dark" onclick="excluir()"><img src="../publico/imagens/icons8-trash-64.png" width="20px"></img></button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row">18/02/2022</th>
+                    <td>1ºetapa</td>
+                    <td>Prova 1B</td>
+                    <td>Prova</td>
+                    <td>-</td>
+                    <td>Soma direta</td>
+                    <td>6</td>
+                    <td>
+                        <button type="button" class="btn  btn-outline-dark"><img src="../publico/imagens/icons8-pen-64.png" width="20px"></img></button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn  btn-outline-dark" onclick="excluir()"><img src="../publico/imagens/icons8-trash-64.png" width="20px"></img></button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+
+</body>
+
+
+</html>

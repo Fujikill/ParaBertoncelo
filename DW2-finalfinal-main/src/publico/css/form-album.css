@@ -1,0 +1,24 @@
+body {
+    padding: 20px;
+    background: url("../imagens/8bb955a9ae1cf5f45c6fb888f862c222.png");
+    background-size: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.div-tab {
+    background-color: #F28157;
+    padding: 10px;
+}
+
+.div-botao {
+    padding-top: 10px;
+}
+
+.div-toast {
+    font-size: 15px;
+    font-weight: bold;
+    color: orangered;
+}

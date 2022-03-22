@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/bscss/bootstrap.min.css">
+    <link href="/publico/css/form-album.css" rel="stylesheet">
+
+    <title>Cadastro</title>
+
+</head>
+
+<body>
+    <main>
+        <div class="container d-flex flex-column col-md-6">
+            <div class="container">
+                <h2>Álbum Digital</h2>
+            </div>
+
+            <form id="dataForm" name="dataForm" class="row g-3" action="/cadastro-album" method="POST" onsubmit="return validarFormulario()">
+                <div class="container div-tab">
+                    <div class="col-md-12">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" size="250">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf" name="cpf">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telWhats" class="form-label">Telefone / Whatsapp</label>
+                            <input type="text" class="form-control" id="telWhats" name="telWhats">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="dataNascimento" class="form-label">Data Nascimento</label>
+                            <input type="date" class="form-control" id="dataNascimento" name="dataNascimento">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="estCivil" class="form-label">Estado Civil</label>
+                            <select id="estCivil" name="estCivil" class="form-select">
+                <option selected>Selecionar</option>
+                <option >Solteira/o</option>
+                <option>Casada/o</option>
+                <option>Divorciada/o</option>
+                <option>Viúva/o</option>
+              </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="curso" class="form-label">Curso</label>
+                        <select id="curso" name="curso" class="form-select">
+              <option selected>Selecionar</option>
+              <option >Informática</option>
+              <option>Eletrotécnica</option>
+              <option>Mecânica</option>
+            </select>
+                    </div>
+
+                    <div class="container d-flex justify-content-around div-botao">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="/publico/imagens/alerta.png" class="rounded me-2" alt="Alerta!" style="width: 20px;">
+                    <strong class="me-auto">Hummm.. Aconteceu algo!</strong>
+                    <small></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div id="msgToast" class="toast-body div-toast">
+                    Hello, world! This is a toast message.
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="/bsjs/bootstrap.min.js"></script>
+    <script src="/popperjs/popper.min.js"></script>
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/mask/jquery.mask.js"></script>
+    <script src="/publico/js/form-album.js"></script>
+
+</body>
+
+</html>
